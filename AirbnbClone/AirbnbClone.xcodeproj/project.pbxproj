@@ -58,13 +58,13 @@
 			isa = PBXGroup;
 			children = (
 				8AE449612BC16D3300406747 /* App */,
+				8AE449532BC11E1A00406747 /* Assets.xcassets */,
+				8AE449512BC11E1800406747 /* ContentView.swift */,
 				8AE449622BC16D5000406747 /* Core */,
 				8AE449632BC16D6400406747 /* Extensions */,
 				8AE449642BC16D8400406747 /* Models */,
-				8AE449652BC16D9800406747 /* Utils */,
-				8AE449512BC11E1800406747 /* ContentView.swift */,
-				8AE449532BC11E1A00406747 /* Assets.xcassets */,
 				8AE449552BC11E1A00406747 /* Preview Content */,
+				8AE449652BC16D9800406747 /* Utils */,
 			);
 			path = AirbnbClone;
 			sourceTree = "<group>";
