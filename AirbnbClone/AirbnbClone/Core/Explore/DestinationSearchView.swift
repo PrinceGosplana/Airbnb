@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct DestinationSearchView: View {
+
+    @Binding var show: Bool
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Button {
+                withAnimation(.snappy) {
+                    show.toggle()
+                }
+            } label: {
+                Image(systemName: "xmark.circle")
+                    .imageScale(.large)
+                    .foregroundStyle(.black)
+            }
+        }
     }
 }
 
 #Preview {
-    DestinationSearchView()
+    DestinationSearchView(show: .constant(false))
 }
