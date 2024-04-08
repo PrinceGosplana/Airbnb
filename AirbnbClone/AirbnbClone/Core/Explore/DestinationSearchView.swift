@@ -49,6 +49,25 @@ struct DestinationSearchView: View {
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .padding()
             .shadow(radius: 10)
+
+            /// date selection view
+            VStack {
+                HStack {
+                    Text("When")
+                        .foregroundStyle(.gray)
+
+                    Spacer()
+
+                    Text("Add dates")
+                }
+                .fontWeight(.semibold)
+                .font(.subheadline)
+            }
+            .padding()
+            .background(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .padding()
+            .shadow(radius: 10)
         }
     }
 }
