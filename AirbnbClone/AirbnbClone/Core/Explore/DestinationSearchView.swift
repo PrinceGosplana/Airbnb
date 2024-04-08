@@ -68,6 +68,25 @@ struct DestinationSearchView: View {
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .padding()
             .shadow(radius: 10)
+
+            /// num guests view
+            VStack {
+                HStack {
+                    Text("Who")
+                        .foregroundStyle(.gray)
+
+                    Spacer()
+
+                    Text("Add guests")
+                }
+                .fontWeight(.semibold)
+                .font(.subheadline)
+            }
+            .padding()
+            .background(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .padding()
+            .shadow(radius: 10)
         }
     }
 }
