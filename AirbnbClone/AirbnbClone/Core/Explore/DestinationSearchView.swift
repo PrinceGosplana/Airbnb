@@ -72,12 +72,8 @@ struct DestinationSearchView: View {
                 }
 
             }
-            .padding()
             .frame(height: selectedOption == .location ? 120 : 64)
-            .background(.white)
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .padding()
-            .shadow(radius: 10)
+            .modifier(CollapsibleDestinationViewModifier())
             .onTapGesture {
                 withAnimation { selectedOption = .location }
             }
@@ -116,12 +112,8 @@ struct DestinationSearchView: View {
                         }
                 }
             }
-            .padding()
+            .modifier(CollapsibleDestinationViewModifier())
             .frame(height: selectedOption == .dates ? 180 : 64)
-            .background(.white)
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .padding()
-            .shadow(radius: 10)
             .onTapGesture {
                 withAnimation { selectedOption = .dates }
             }
@@ -149,12 +141,8 @@ struct DestinationSearchView: View {
                         }
                 }
             }
-            .padding()
+            .modifier(CollapsibleDestinationViewModifier())
             .frame(height: selectedOption == .guests ? 120 : 64)
-            .background(.white)
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .padding()
-            .shadow(radius: 10)
             .onTapGesture {
                 withAnimation { selectedOption = .guests }
             }
@@ -166,6 +154,17 @@ struct DestinationSearchView: View {
 
 #Preview {
     DestinationSearchView(show: .constant(false))
+}
+
+struct CollapsibleDestinationViewModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding()
+            .background(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .padding()
+            .shadow(radius: 10)
+    }
 }
 
 struct CollapsedPicker: View {
