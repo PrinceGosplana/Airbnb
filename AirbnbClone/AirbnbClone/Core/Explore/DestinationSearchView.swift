@@ -56,19 +56,24 @@ struct DestinationSearchView: View {
 
             }
             .padding()
+            .frame(height: selectedOption == .location ? 120 : 64)
             .background(.white)
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .padding()
             .shadow(radius: 10)
             .onTapGesture {
-                selectedOption = .location
+                withAnimation { selectedOption = .location }
             }
 
             /// date selection view
 
             VStack {
                 if selectedOption == .dates {
-                    Text("Show expanded view")
+                    HStack {
+                        Text("Show expanded view")
+
+                        Spacer()
+                    }
                 } else {
                     CollapsedPicker(title: "When", description: "Add dates")
                         .onTapGesture {
@@ -76,14 +81,24 @@ struct DestinationSearchView: View {
                         }
                 }
             }
+            .padding()
+            .frame(height: selectedOption == .dates ? 120 : 64)
+            .background(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .padding()
+            .shadow(radius: 10)
             .onTapGesture {
-                selectedOption = .dates
+                withAnimation { selectedOption = .dates }
             }
 
             /// num guests view
             VStack {
                 if selectedOption == .guests {
-                    Text("Show expanded view")
+                    HStack {
+                        Text("Show expanded view")
+
+                        Spacer()
+                    }
                 } else {
                     CollapsedPicker(title: "Who", description: "Add guests")
                         .onTapGesture {
@@ -91,8 +106,14 @@ struct DestinationSearchView: View {
                         }
                 }
             }
+            .padding()
+            .frame(height: selectedOption == .guests ? 120 : 64)
+            .background(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .padding()
+            .shadow(radius: 10)
             .onTapGesture {
-                selectedOption = .guests
+                withAnimation { selectedOption = .guests }
             }
 
         }
@@ -120,10 +141,5 @@ struct CollapsedPicker: View {
             .fontWeight(.semibold)
             .font(.subheadline)
         }
-        .padding()
-        .background(.white)
-        .clipShape(RoundedRectangle(cornerRadius: 12))
-        .padding()
-        .shadow(radius: 10)
     }
 }
