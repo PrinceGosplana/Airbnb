@@ -18,6 +18,7 @@ struct DestinationSearchView: View {
     @State private var selectedOption: DestinationSearchOptions = .location
     @State private var startDate = Date()
     @State private var endDate = Date()
+    @State private var numGuests = 0
 
     var body: some View {
         VStack {
@@ -112,13 +113,21 @@ struct DestinationSearchView: View {
             }
 
             /// num guests view
-            VStack {
+            VStack(alignment: .leading) {
                 if selectedOption == .guests {
-                    HStack {
-                        Text("Show expanded view")
+                    Text("Who's coming")
+                        .font(.title)
+                        .fontWeight(.semibold)
 
-                        Spacer()
+                    Stepper {
+                        Text("^[\(numGuests) Adult](inflect: true)")
+                    } onIncrement: {
+                        numGuests += 1
+                    } onDecrement: {
+                        guard numGuests > 0 else { return }
+                        numGuests -= 1
                     }
+
                 } else {
                     CollapsedPicker(title: "Who", description: "Add guests")
                         .onTapGesture {
