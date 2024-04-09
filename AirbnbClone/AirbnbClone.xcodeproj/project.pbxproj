@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A3B992F2BC535EF009B326E /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B992E2BC535EF009B326E /* Date+Ext.swift */; };
 		8AE449502BC11E1800406747 /* AirbnbCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE4494F2BC11E1800406747 /* AirbnbCloneApp.swift */; };
 		8AE449542BC11E1A00406747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE449532BC11E1A00406747 /* Assets.xcassets */; };
 		8AE449572BC11E1A00406747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE449562BC11E1A00406747 /* Preview Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A3B992E2BC535EF009B326E /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		8AE4494C2BC11E1800406747 /* AirbnbClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirbnbClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE4494F2BC11E1800406747 /* AirbnbCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbCloneApp.swift; sourceTree = "<group>"; };
 		8AE449532BC11E1A00406747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		8AE449632BC16D6400406747 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8A3B992E2BC535EF009B326E /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				8AE449772BC2938800406747 /* ListingImageCarouselView.swift in Sources */,
 				8AE449972BC3DBB300406747 /* DestinationSearchView.swift in Sources */,
 				8AE449702BC171B900406747 /* ListingItemView.swift in Sources */,
+				8A3B992F2BC535EF009B326E /* Date+Ext.swift in Sources */,
 				8AE4496E2BC1707800406747 /* ExploreView.swift in Sources */,
 				8AE449722BC1988800406747 /* SearchAndFilterBar.swift in Sources */,
 				8AE449742BC2922300406747 /* ListingDetailView.swift in Sources */,

@@ -75,11 +75,21 @@ struct DestinationSearchView: View {
                         .fontWeight(.semibold)
 
                     VStack {
-                        DatePicker("From", selection: $startDate, displayedComponents: .date)
+                        DatePicker(
+                            "From",
+                            selection: $startDate,
+                            in: Date()...Date().oneYearInFuture,
+                            displayedComponents: .date
+                        )
 
                         Divider()
 
-                        DatePicker("To", selection: $endDate, displayedComponents: .date)
+                        DatePicker(
+                            "To",
+                            selection: $endDate,
+                            in: Date()...Date().oneYearInFuture,
+                            displayedComponents: .date
+                        )
                     }
                     .foregroundStyle(.gray)
                     .font(.subheadline)
