@@ -21,15 +21,10 @@ struct WishlistsView: View {
 
                 }
                 Button {
-                    
+
                 } label: {
                     Text("Log in")
-                        .foregroundStyle(.white)
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .frame(width: 360, height: 48)
-                        .background(.pink)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .modifier(PinkButtonViewModifier())
                 }
 
                 Spacer()
