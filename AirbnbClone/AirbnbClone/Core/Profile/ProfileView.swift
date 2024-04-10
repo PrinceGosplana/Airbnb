@@ -40,7 +40,16 @@ struct ProfileView: View {
                 }
                 .font(.caption)
             }
+
+            /// profile options
+            VStack(spacing: 24) {
+                ProfileOptionRowView(imageName: "gear", title: "Settings")
+                ProfileOptionRowView(imageName: "gear", title: "Accessibility")
+                ProfileOptionRowView(imageName: "questionmark.circle", title: "Visit the help center")
+            }
+            .padding(.vertical)
         }
+        .padding()
     }
 }
 
