@@ -8,6 +8,9 @@
 import Foundation
 
 final class DeveloperPreview {
+
+    static let shared = DeveloperPreview()
+    
     var listings: [Listing] = [
         .init(
             id: NSUUID().uuidString,
@@ -21,7 +24,7 @@ final class DeveloperPreview {
             pricePerNight: 567,
             latitude: 25.7850,
             longitude: -80.1936,
-            imageURLs: ["listing-1", "listing-2", "listing-3", "listing-4"].shuffled(),
+            imageURLs: ["listing-4", "listing-2", "listing-3", "listing-1"],
             address: "124 Main St",
             city: "Miami",
             state: "Florida",
@@ -43,7 +46,7 @@ final class DeveloperPreview {
             pricePerNight: 567,
             latitude: 25.7850,
             longitude: -80.1936,
-            imageURLs: ["listing-1", "listing-2", "listing-3", "listing-4"].shuffled(),
+            imageURLs: ["listing-1", "listing-2", "listing-3", "listing-4"],
             address: "124 Main St",
             city: "Miami",
             state: "Florida",
@@ -65,7 +68,7 @@ final class DeveloperPreview {
             pricePerNight: 567,
             latitude: 25.7850,
             longitude: -80.1936,
-            imageURLs: ["listing-1", "listing-2", "listing-3", "listing-4"].shuffled(),
+            imageURLs: ["listing-2", "listing-3", "listing-1", "listing-4"].shuffled(),
             address: "124 Main St",
             city: "Miami",
             state: "Florida",
@@ -109,7 +112,7 @@ final class DeveloperPreview {
             pricePerNight: 567,
             latitude: 25.7850,
             longitude: -80.1936,
-            imageURLs: ["listing-1", "listing-2", "listing-3", "listing-4"].shuffled(),
+            imageURLs: ["listing-3", "listing-2", "listing-1", "listing-4"].shuffled(),
             address: "124 Main St",
             city: "Miami",
             state: "Florida",
