@@ -14,7 +14,7 @@ struct ListingItemView: View {
     var body: some View {
         VStack(spacing: 8) {
             // images
-            ListingImageCarouselView()
+            ListingImageCarouselView(listing: listing)
                 .frame(height: 320)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
             // listing details
@@ -32,7 +32,7 @@ struct ListingItemView: View {
                         .foregroundStyle(.gray)
 
                     HStack(spacing: 4) {
-                        Text("$576")
+                        Text(listing.pricePerNight.formatted( .currency(code: "USD").locale(Locale(identifier: "us-UA"))))
                             .fontWeight(.semibold)
                         Text("night")
                     }
@@ -45,7 +45,7 @@ struct ListingItemView: View {
                 HStack(spacing: 2) {
                     Image(systemName: "star.fill")
 
-                    Text("4.86")
+                    Text("\(listing.rating)")
                 }
                 .foregroundStyle(.black)
 
