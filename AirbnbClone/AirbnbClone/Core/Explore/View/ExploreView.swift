@@ -11,6 +11,7 @@ struct ExploreView: View {
 
     @State private var showDestinationSearchView = false
     @StateObject var viewModel = ExplorerViewModel(service: ExploreService())
+    @State private var showMapView = false
 
     var body: some View {
         NavigationStack {
@@ -21,28 +22,45 @@ struct ExploreView: View {
                     viewModel: viewModel
                 )
             } else {
-                ScrollView {
-                    SearchAndFilterBar(location: $viewModel.searchLocation)
-                        .onTapGesture {
-                            withAnimation(.snappy) {
-                                showDestinationSearchView.toggle()
+                ZStack(alignment: .bottom) {
+                    ScrollView {
+                        SearchAndFilterBar(location: $viewModel.searchLocation)
+                            .onTapGesture {
+                                withAnimation(.snappy) {
+                                    showDestinationSearchView.toggle()
+                                }
                             }
-                        }
 
-                    LazyVStack(spacing: 32) {
-                        ForEach(viewModel.listings, id: \.self) { listing in
-                            NavigationLink(value: listing) {
-                                ListingItemView(listing: listing)
-                                    .frame(height: 400)
-                                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                        LazyVStack(spacing: 32) {
+                            ForEach(viewModel.listings, id: \.self) { listing in
+                                NavigationLink(value: listing) {
+                                    ListingItemView(listing: listing)
+                                        .frame(height: 400)
+                                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                                }
                             }
                         }
+                        .padding()
                     }
+                    .navigationDestination(for: Listing.self) { listing in
+                        ListingDetailView(listing: listing)
+                            .navigationBarBackButtonHidden()
+                    }
+
+                    Button {
+                        showMapView.toggle()
+                    } label: {
+                        Label("Map", systemImage: "paperplane")
+                    }
+                    .foregroundStyle(.white)
+                    .padding(.vertical, 12)
+                    .padding(.horizontal)
+                    .background(Color.black)
+                    .clipShape(Capsule())
                     .padding()
                 }
-                .navigationDestination(for: Listing.self) { listing in
-                    ListingDetailView(listing: listing)
-                        .navigationBarBackButtonHidden()
+                .sheet(isPresented: $showMapView) {
+                    ListingMapView(listings: viewModel.listings)
                 }
             }
         }
