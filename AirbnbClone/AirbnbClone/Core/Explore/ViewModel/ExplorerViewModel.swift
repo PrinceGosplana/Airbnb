@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 final class ExplorerViewModel: ObservableObject {
 
     @Published var listings = [Listing]()
