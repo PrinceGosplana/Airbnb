@@ -21,27 +21,9 @@ struct WishlistsView: View {
         NavigationStack {
             VStack {
                 if authManager.userSessionId == nil {
-                    VStack(alignment: .leading, spacing: 32) {
-
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("Log in to view your wishlists")
-                                .font(.headline)
-
-                            Text("You can create, view or edit wishlists once you're logged in")
-                                .font(.footnote)
-
-                        }
-                        Button {
-                            showLogin.toggle()
-                        } label: {
-                            Text("Log in")
-                                .modifier(PrimaryButtonModifier())
-                        }
-
-                        Spacer()
-                    }
+                    WishlistLoginView(showLogin: $showLogin)
                 } else {
-                    Text("Logged")
+                    WishlistEmptyStateView()
                 }
             }
             .sheet(isPresented: $showLogin) {

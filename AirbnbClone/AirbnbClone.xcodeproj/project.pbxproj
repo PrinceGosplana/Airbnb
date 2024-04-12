@@ -28,6 +28,11 @@
 		8ADE2F542BC90EAE0024F21E /* AuthenticationFormProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE2F532BC90EAE0024F21E /* AuthenticationFormProtocol.swift */; };
 		8ADE2F562BC917840024F21E /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE2F552BC917840024F21E /* MockAuthService.swift */; };
 		8ADE2F582BC923EE0024F21E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE2F572BC923EE0024F21E /* AuthManager.swift */; };
+		8ADE2F792BC96AA40024F21E /* UserProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE2F782BC96AA40024F21E /* UserProfileHeaderView.swift */; };
+		8ADE2F7B2BC96AE00024F21E /* ProfileLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE2F7A2BC96AE00024F21E /* ProfileLoginView.swift */; };
+		8ADE2F7D2BC96C6B0024F21E /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE2F7C2BC96C6B0024F21E /* CircularProfileImageView.swift */; };
+		8ADE2F822BC971840024F21E /* WishlistEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE2F812BC971840024F21E /* WishlistEmptyStateView.swift */; };
+		8ADE2F842BC9720A0024F21E /* WishlistLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE2F832BC9720A0024F21E /* WishlistLoginView.swift */; };
 		8AE449502BC11E1800406747 /* AirbnbCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE4494F2BC11E1800406747 /* AirbnbCloneApp.swift */; };
 		8AE449542BC11E1A00406747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE449532BC11E1A00406747 /* Assets.xcassets */; };
 		8AE449572BC11E1A00406747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE449562BC11E1A00406747 /* Preview Assets.xcassets */; };
@@ -61,6 +66,11 @@
 		8ADE2F532BC90EAE0024F21E /* AuthenticationFormProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFormProtocol.swift; sourceTree = "<group>"; };
 		8ADE2F552BC917840024F21E /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
 		8ADE2F572BC923EE0024F21E /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		8ADE2F782BC96AA40024F21E /* UserProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeaderView.swift; sourceTree = "<group>"; };
+		8ADE2F7A2BC96AE00024F21E /* ProfileLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoginView.swift; sourceTree = "<group>"; };
+		8ADE2F7C2BC96C6B0024F21E /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		8ADE2F812BC971840024F21E /* WishlistEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistEmptyStateView.swift; sourceTree = "<group>"; };
+		8ADE2F832BC9720A0024F21E /* WishlistLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistLoginView.swift; sourceTree = "<group>"; };
 		8AE4494C2BC11E1800406747 /* AirbnbClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirbnbClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE4494F2BC11E1800406747 /* AirbnbCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbCloneApp.swift; sourceTree = "<group>"; };
 		8AE449532BC11E1A00406747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,6 +189,37 @@
 				8ADE2F512BC904870024F21E /* PrimaryButtonModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		8ADE2F7E2BC971450024F21E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8ADA845B2BC6A7BF00A8A0A0 /* WishlistsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8ADE2F7F2BC9715C0024F21E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8ADE2F802BC971680024F21E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8ADE2F852BC972CC0024F21E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8ADE2F812BC971840024F21E /* WishlistEmptyStateView.swift */,
+				8ADE2F832BC9720A0024F21E /* WishlistLoginView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		8AE449432BC11E1800406747 = {
@@ -302,6 +343,8 @@
 			children = (
 				8A3B99302BC54529009B326E /* ProfileView.swift */,
 				8ADA84592BC6A5FE00A8A0A0 /* ProfileOptionRowView.swift */,
+				8ADE2F782BC96AA40024F21E /* UserProfileHeaderView.swift */,
+				8ADE2F7A2BC96AE00024F21E /* ProfileLoginView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -324,7 +367,10 @@
 		8AE4496C2BC16F6900406747 /* WishList */ = {
 			isa = PBXGroup;
 			children = (
-				8ADA845B2BC6A7BF00A8A0A0 /* WishlistsView.swift */,
+				8ADE2F852BC972CC0024F21E /* Components */,
+				8ADE2F802BC971680024F21E /* Model */,
+				8ADE2F7F2BC9715C0024F21E /* ViewModel */,
+				8ADE2F7E2BC971450024F21E /* Views */,
 			);
 			path = WishList;
 			sourceTree = "<group>";
@@ -333,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				8AE449762BC2938800406747 /* ListingImageCarouselView.swift */,
+				8ADE2F7C2BC96C6B0024F21E /* CircularProfileImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -425,15 +472,20 @@
 				8A03FCBA2BC8EC8A009E7077 /* RegistrationViewModel.swift in Sources */,
 				8A03FC9B2BC6B36C009E7077 /* Listing.swift in Sources */,
 				8A03FCA92BC80FC5009E7077 /* ListingMapView.swift in Sources */,
+				8ADE2F842BC9720A0024F21E /* WishlistLoginView.swift in Sources */,
+				8ADE2F792BC96AA40024F21E /* UserProfileHeaderView.swift in Sources */,
 				8ADA845C2BC6A7BF00A8A0A0 /* WishlistsView.swift in Sources */,
 				8ADE2F542BC90EAE0024F21E /* AuthenticationFormProtocol.swift in Sources */,
 				8AE4496E2BC1707800406747 /* ExploreView.swift in Sources */,
 				8A03FCB42BC8EC40009E7077 /* LoginView.swift in Sources */,
 				8A03FCA72BC7DA1A009E7077 /* Regions.swift in Sources */,
 				8AE449722BC1988800406747 /* SearchAndFilterBar.swift in Sources */,
+				8ADE2F822BC971840024F21E /* WishlistEmptyStateView.swift in Sources */,
 				8ADE2F562BC917840024F21E /* MockAuthService.swift in Sources */,
 				8AE449742BC2922300406747 /* ListingDetailView.swift in Sources */,
+				8ADE2F7D2BC96C6B0024F21E /* CircularProfileImageView.swift in Sources */,
 				8AE449502BC11E1800406747 /* AirbnbCloneApp.swift in Sources */,
+				8ADE2F7B2BC96AE00024F21E /* ProfileLoginView.swift in Sources */,
 				8A03FCA32BC6DD0A009E7077 /* ExplorerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,34 +19,9 @@ struct ProfileView: View {
         VStack {
 
             if authManager.userSessionId == nil {
-                /// profile login view
-                VStack(alignment: .leading, spacing: 32) {
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text("Profile")
-                            .font(.largeTitle)
-                            .fontWeight(.semibold)
-                        Text("Log in to start planning your next trip")
-                    }
-
-                    Button {
-                        showLogin.toggle()
-                    } label: {
-                        Text("Log in")
-                            .modifier(PrimaryButtonModifier())
-                    }
-
-                    HStack {
-                        Text("Don't have an account?")
-
-                        Text("Sign up")
-                            .fontWeight(.semibold)
-                            .underline()
-                    }
-                    .font(.caption)
-                }
-
+                ProfileLoginView(showLogin: $showLogin)
             } else {
-
+                UserProfileHeaderView()
             }
             /// profile options
             VStack(spacing: 24) {
@@ -55,6 +30,21 @@ struct ProfileView: View {
                 ProfileOptionRowView(imageName: "questionmark.circle", title: "Visit the help center")
             }
             .padding(.vertical)
+
+            if authManager.userSessionId != nil {
+                Button {
+                    Task {
+                        await authManager.signout()
+                    }
+                } label: {
+                    Text("Log Out")
+                        .foregroundStyle(.black)
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .underline()
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
         }
         .sheet(isPresented: $showLogin) {
             LoginView(authManager: authManager)
