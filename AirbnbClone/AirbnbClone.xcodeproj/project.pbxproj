@@ -14,12 +14,20 @@
 		8A03FCA72BC7DA1A009E7077 /* Regions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCA62BC7DA1A009E7077 /* Regions.swift */; };
 		8A03FCA92BC80FC5009E7077 /* ListingMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCA82BC80FC5009E7077 /* ListingMapView.swift */; };
 		8A03FCAB2BC86141009E7077 /* ListingMapPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCAA2BC86141009E7077 /* ListingMapPreviewView.swift */; };
+		8A03FCB42BC8EC40009E7077 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCB32BC8EC40009E7077 /* LoginView.swift */; };
+		8A03FCB62BC8EC60009E7077 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCB52BC8EC60009E7077 /* RegistrationView.swift */; };
+		8A03FCB82BC8EC75009E7077 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCB72BC8EC75009E7077 /* LoginViewModel.swift */; };
+		8A03FCBA2BC8EC8A009E7077 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A03FCB92BC8EC8A009E7077 /* RegistrationViewModel.swift */; };
 		8A3B992F2BC535EF009B326E /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B992E2BC535EF009B326E /* Date+Ext.swift */; };
 		8A3B99312BC54529009B326E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B99302BC54529009B326E /* ProfileView.swift */; };
 		8ADA845A2BC6A5FE00A8A0A0 /* ProfileOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADA84592BC6A5FE00A8A0A0 /* ProfileOptionRowView.swift */; };
 		8ADA845C2BC6A7BF00A8A0A0 /* WishlistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADA845B2BC6A7BF00A8A0A0 /* WishlistsView.swift */; };
-		8ADA845F2BC6AC3C00A8A0A0 /* PinkButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADA845E2BC6AC3C00A8A0A0 /* PinkButtonViewModifier.swift */; };
 		8ADA84612BC6AD8900A8A0A0 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADA84602BC6AD8900A8A0A0 /* MainTabView.swift */; };
+		8ADE2F502BC904180024F21E /* PrimaryTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE2F4F2BC904180024F21E /* PrimaryTextFieldModifier.swift */; };
+		8ADE2F522BC904870024F21E /* PrimaryButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE2F512BC904870024F21E /* PrimaryButtonModifier.swift */; };
+		8ADE2F542BC90EAE0024F21E /* AuthenticationFormProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE2F532BC90EAE0024F21E /* AuthenticationFormProtocol.swift */; };
+		8ADE2F562BC917840024F21E /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE2F552BC917840024F21E /* MockAuthService.swift */; };
+		8ADE2F582BC923EE0024F21E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE2F572BC923EE0024F21E /* AuthManager.swift */; };
 		8AE449502BC11E1800406747 /* AirbnbCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE4494F2BC11E1800406747 /* AirbnbCloneApp.swift */; };
 		8AE449542BC11E1A00406747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE449532BC11E1A00406747 /* Assets.xcassets */; };
 		8AE449572BC11E1A00406747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE449562BC11E1A00406747 /* Preview Assets.xcassets */; };
@@ -39,12 +47,20 @@
 		8A03FCA62BC7DA1A009E7077 /* Regions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regions.swift; sourceTree = "<group>"; };
 		8A03FCA82BC80FC5009E7077 /* ListingMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingMapView.swift; sourceTree = "<group>"; };
 		8A03FCAA2BC86141009E7077 /* ListingMapPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingMapPreviewView.swift; sourceTree = "<group>"; };
+		8A03FCB32BC8EC40009E7077 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8A03FCB52BC8EC60009E7077 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		8A03FCB72BC8EC75009E7077 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8A03FCB92BC8EC8A009E7077 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		8A3B992E2BC535EF009B326E /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		8A3B99302BC54529009B326E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		8ADA84592BC6A5FE00A8A0A0 /* ProfileOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionRowView.swift; sourceTree = "<group>"; };
 		8ADA845B2BC6A7BF00A8A0A0 /* WishlistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistsView.swift; sourceTree = "<group>"; };
-		8ADA845E2BC6AC3C00A8A0A0 /* PinkButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkButtonViewModifier.swift; sourceTree = "<group>"; };
 		8ADA84602BC6AD8900A8A0A0 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		8ADE2F4F2BC904180024F21E /* PrimaryTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextFieldModifier.swift; sourceTree = "<group>"; };
+		8ADE2F512BC904870024F21E /* PrimaryButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonModifier.swift; sourceTree = "<group>"; };
+		8ADE2F532BC90EAE0024F21E /* AuthenticationFormProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFormProtocol.swift; sourceTree = "<group>"; };
+		8ADE2F552BC917840024F21E /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
+		8ADE2F572BC923EE0024F21E /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		8AE4494C2BC11E1800406747 /* AirbnbClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirbnbClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE4494F2BC11E1800406747 /* AirbnbCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbCloneApp.swift; sourceTree = "<group>"; };
 		8AE449532BC11E1A00406747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +108,77 @@
 				8A03FCA22BC6DD0A009E7077 /* ExplorerViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8A03FCAC2BC8EBCC009E7077 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				8A03FCB22BC8EBFC009E7077 /* Manager */,
+				8A03FCB12BC8EBFA009E7077 /* Model */,
+				8A03FCB02BC8EBF7009E7077 /* Protocols */,
+				8A03FCAD2BC8EBED009E7077 /* Service */,
+				8A03FCAE2BC8EBF2009E7077 /* ViewModels */,
+				8A03FCAF2BC8EBF4009E7077 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		8A03FCAD2BC8EBED009E7077 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8ADE2F552BC917840024F21E /* MockAuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8A03FCAE2BC8EBF2009E7077 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8A03FCB72BC8EC75009E7077 /* LoginViewModel.swift */,
+				8A03FCB92BC8EC8A009E7077 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8A03FCAF2BC8EBF4009E7077 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A03FCB32BC8EC40009E7077 /* LoginView.swift */,
+				8A03FCB52BC8EC60009E7077 /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A03FCB02BC8EBF7009E7077 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8ADE2F532BC90EAE0024F21E /* AuthenticationFormProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8A03FCB12BC8EBFA009E7077 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A03FCB22BC8EBFC009E7077 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8ADE2F572BC923EE0024F21E /* AuthManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8ADE2F4E2BC903FA0024F21E /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				8ADE2F4F2BC904180024F21E /* PrimaryTextFieldModifier.swift */,
+				8ADE2F512BC904870024F21E /* PrimaryButtonModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		8AE449432BC11E1800406747 = {
@@ -143,6 +230,7 @@
 		8AE449622BC16D5000406747 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				8A03FCAC2BC8EBCC009E7077 /* Authentication */,
 				8AE449752BC2934F00406747 /* Components */,
 				8AE449662BC16EFB00406747 /* Explore */,
 				8AE449672BC16F0D00406747 /* Listings */,
@@ -159,7 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				8A3B992E2BC535EF009B326E /* Date+Ext.swift */,
-				8ADA845E2BC6AC3C00A8A0A0 /* PinkButtonViewModifier.swift */,
 				8A03FC9C2BC6D7DB009E7077 /* DeveloperPreview.swift */,
 				8A03FCA62BC7DA1A009E7077 /* Regions.swift */,
 			);
@@ -177,6 +264,7 @@
 		8AE449652BC16D9800406747 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8ADE2F4E2BC903FA0024F21E /* Modifiers */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -319,23 +407,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A03FCB82BC8EC75009E7077 /* LoginViewModel.swift in Sources */,
+				8ADE2F582BC923EE0024F21E /* AuthManager.swift in Sources */,
 				8AE449772BC2938800406747 /* ListingImageCarouselView.swift in Sources */,
 				8A3B99312BC54529009B326E /* ProfileView.swift in Sources */,
 				8AE449972BC3DBB300406747 /* DestinationSearchView.swift in Sources */,
 				8A03FCAB2BC86141009E7077 /* ListingMapPreviewView.swift in Sources */,
 				8A03FCA52BC6E342009E7077 /* ExploreService.swift in Sources */,
-				8ADA845F2BC6AC3C00A8A0A0 /* PinkButtonViewModifier.swift in Sources */,
 				8AE449702BC171B900406747 /* ListingItemView.swift in Sources */,
 				8A03FC9D2BC6D7DB009E7077 /* DeveloperPreview.swift in Sources */,
+				8ADE2F522BC904870024F21E /* PrimaryButtonModifier.swift in Sources */,
 				8ADA845A2BC6A5FE00A8A0A0 /* ProfileOptionRowView.swift in Sources */,
 				8A3B992F2BC535EF009B326E /* Date+Ext.swift in Sources */,
+				8ADE2F502BC904180024F21E /* PrimaryTextFieldModifier.swift in Sources */,
 				8ADA84612BC6AD8900A8A0A0 /* MainTabView.swift in Sources */,
+				8A03FCB62BC8EC60009E7077 /* RegistrationView.swift in Sources */,
+				8A03FCBA2BC8EC8A009E7077 /* RegistrationViewModel.swift in Sources */,
 				8A03FC9B2BC6B36C009E7077 /* Listing.swift in Sources */,
 				8A03FCA92BC80FC5009E7077 /* ListingMapView.swift in Sources */,
 				8ADA845C2BC6A7BF00A8A0A0 /* WishlistsView.swift in Sources */,
+				8ADE2F542BC90EAE0024F21E /* AuthenticationFormProtocol.swift in Sources */,
 				8AE4496E2BC1707800406747 /* ExploreView.swift in Sources */,
+				8A03FCB42BC8EC40009E7077 /* LoginView.swift in Sources */,
 				8A03FCA72BC7DA1A009E7077 /* Regions.swift in Sources */,
 				8AE449722BC1988800406747 /* SearchAndFilterBar.swift in Sources */,
+				8ADE2F562BC917840024F21E /* MockAuthService.swift in Sources */,
 				8AE449742BC2922300406747 /* ListingDetailView.swift in Sources */,
 				8AE449502BC11E1800406747 /* AirbnbCloneApp.swift in Sources */,
 				8A03FCA32BC6DD0A009E7077 /* ExplorerViewModel.swift in Sources */,

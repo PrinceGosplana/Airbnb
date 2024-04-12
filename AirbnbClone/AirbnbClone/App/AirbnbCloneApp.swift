@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct AirbnbCloneApp: App {
+
+    let authManager = AuthManager(service: MockAuthService())
+
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            MainTabView(authManager: authManager)
         }
     }
 }

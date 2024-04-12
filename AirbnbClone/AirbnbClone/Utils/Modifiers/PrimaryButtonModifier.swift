@@ -1,22 +1,20 @@
 //
-//  PinkButtonViewModifier.swift
+//  PrimaryButtonModifier.swift
 //  AirbnbClone
 //
-//  Created by Oleksandr Isaiev on 10.04.2024.
+//  Created by Oleksandr Isaiev on 12.04.2024.
 //
 
 import SwiftUI
 
-struct PinkButtonViewModifier: ViewModifier {
-
+struct PrimaryButtonModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .foregroundStyle(.white)
             .font(.subheadline)
             .fontWeight(.semibold)
+            .foregroundStyle(.white)
             .frame(width: 360, height: 48)
-            .background(.pink)
+            .background(Color(.systemPink))
             .clipShape(RoundedRectangle(cornerRadius: 8))
     }
-
 }
